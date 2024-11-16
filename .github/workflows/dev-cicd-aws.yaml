@@ -157,7 +157,7 @@ jobs:
     #       echo "No SARIF results file found." >> $GITHUB_STEP_SUMMARY
     #     fi
 
-load-test:
+  load-test:
     runs-on: ubuntu-latest
     environment: runner
     services:
@@ -179,6 +179,7 @@ load-test:
           --health-interval=10s
           --health-timeout=5s
           --health-retries=3
+
     steps:
       - name: 배포용 소스 다운로드
         uses: actions/checkout@v4
