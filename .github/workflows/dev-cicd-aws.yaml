@@ -1,4 +1,4 @@
-name: istory ci/cd dev pipeline3
+name: istory ci/cd dev pipeline4
 
 on:
   push:
